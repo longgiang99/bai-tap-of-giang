@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>minitest bai 2</title>
+</head>
+<body>
+<input type="number" id="bang1">
+<input id="bang2" type="number">
+<br>
+<button onclick="cong()">+</button>
+<button onclick="tru()">-</button>
+<button onclick="nhan()">*</button>
+<button onclick="chia()">/</button>
+<p id="ketqua">ketqua:</p>
+<script>
+    function cong(){
+        let aa =parseFloat(document.getElementById("bang1").value);
+        let bb =parseFloat(document.getElementById("bang2").value);
+        let c = aa + bb ;
+        document.getElementById('ketqua').innerHTML =  c;
+    }
+    function tru(){
+        let aa =parseFloat(document.getElementById("bang1").value);
+        let bb =parseFloat(document.getElementById("bang2").value);
+        let c = aa - bb ;
+        document.getElementById('ketqua').innerHTML =  c;}
+    function nhan(){
+        let aa =parseFloat(document.getElementById("bang1").value);
+        let bb =parseFloat(document.getElementById("bang2").value);
+        let c = aa * bb ;
+        document.getElementById('ketqua').innerHTML =  c;
+    }
+    function chia(){
+        let aa =parseFloat(document.getElementById("bang1").value);
+        let bb =parseFloat(document.getElementById("bang2").value);
+        let _ = aa / bb ;
+        document.getElementById('ketqua').innerHTML=_;
+    }
+</script>
+</body>
+</html>
