@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>up-down</title>
+</head>
+<body>
+<!--nhớ onclick phải có đóng mửo ngoặc()-->
+  <input type="number" id="a" value="0">
+  <button onclick="them()">up</button>
+  <button onclick="bot()">down</button>
+
+
+<script>
+<!--    sử dụng hàm funciton khai báo sự kiện onclick-->
+  function them(){
+    // khai báo đặt tên a = id  đã đặt ở trên kèm giá trị( tiếng anh là value)
+    let c = parseFloat(document.getElementById("a").value);
+     // giá trị trả về sẽ cộng thêm 2
+     document.getElementById("a").value= c + 2;}
+  function bot(){
+      let c = parseFloat(document.getElementById("a").value);
+      document.getElementById("a").value= c - 2;}
+</script>
+</body>
+</html>
